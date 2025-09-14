@@ -10,7 +10,7 @@ namespace BookingService.Infrastructure.Persistence
             var optionsBuilder = new DbContextOptionsBuilder<BookingDbContext>();
 
             optionsBuilder.UseSqlServer(
-                "Server=ITWW011LAP65176\\SQLDEV;Database=BookingDb;Trusted_Connection=True;TrustServerCertificate=True;");
+                "Server=localhost;Database=BookingDb;Trusted_Connection=True;TrustServerCertificate=True;");
 
             return new BookingDbContext(optionsBuilder.Options);
         }
